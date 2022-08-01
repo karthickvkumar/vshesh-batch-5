@@ -1,0 +1,7 @@
+h1{
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration-line: underline overline;
+  text-decoration-color: darkblue;
+}
