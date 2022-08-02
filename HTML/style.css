@@ -1,7 +1,23 @@
+/* This will create style for all H1 tag */
 h1{
   color: rgb(255, 0, 0);
   background-color: rgb(255, 255, 255);
   text-align: center;
-  text-decoration-line: underline overline;
+  /* text-decoration-line: underline overline;
   text-decoration-color: darkblue;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px; */
+  text-decoration: underline overline darkblue solid 2px;
+  text-transform: capitalize;
+  letter-spacing: 10px;
+  word-spacing: 20px;
+}
+
+p{
+  text-indent: 150px;
+  line-height: 1.5;
+  word-spacing: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
 }
