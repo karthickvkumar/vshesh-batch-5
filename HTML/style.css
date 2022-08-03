@@ -19,5 +19,10 @@ p{
   word-spacing: 20px;
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Great Vibes', cursive;
+}
+
+.sub-text{
+  color: red;
+  background-color: black;
 }
