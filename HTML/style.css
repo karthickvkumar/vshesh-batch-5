@@ -26,3 +26,14 @@ p{
   color: red;
   background-color: black;
 }
+
+.table-border{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.table-head{
+  width: 150px;
+  color: white;
+  background-color: green;
+}

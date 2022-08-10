@@ -2,6 +2,7 @@
   height: 200px;
   background-color: aquamarine;
   width: 500px;
+  /* display: none; */
 }
 
 .box-2{
@@ -52,4 +53,26 @@
   /* background-image: url("./shinchu.jpg"); */
   background-image: url("https://img.freepik.com/premium-vector/cartoon-little-boy-with-mobile-phone_353337-762.jpg?w=360");
   background-repeat: no-repeat;
+}
+
+.display-block{
+  font-size: 28px;
+  border: 3px solid red;
+  display: block;
+}
+
+.display-inline{
+  border: 3px solid black;
+  display: inline;
+}
+
+.overflow{
+  height: 100px;
+  border: 3px solid blue;
+  width: 400px;
+  margin-bottom: 25px;
+  /* overflow: visible; -- It is the default behaviour */ 
+  /* overflow: hidden; -- It will hide the content that goes outside the box */
+  /* overflow: scroll; */
+  overflow: auto;
 }
