@@ -1,0 +1,21 @@
+.container-1{
+  height: 40vh;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.container-2{
+  height: 20vh;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.container-3{
+  height: 40vh;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+.main{
+  margin: 0px;
+}
