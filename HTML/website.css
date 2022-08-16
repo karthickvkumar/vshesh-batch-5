@@ -26,6 +26,9 @@
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .main{
@@ -90,5 +93,30 @@
 .small-title{
   border: 2px solid green;
   height: 50%;
+  box-sizing: border-box;
+}
+
+.box{
+  border: 2px solid blue;
+  height: 100%;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.box-image{
+  border: 2px solid green;
+  height: 60%;
+  box-sizing: border-box;
+}
+
+.box-title{
+  border: 2px solid green;
+  height: 20%;
+  box-sizing: border-box;
+}
+
+.box-sub-heading{
+  border: 2px solid green;
+  height: 20%;
   box-sizing: border-box;
 }
