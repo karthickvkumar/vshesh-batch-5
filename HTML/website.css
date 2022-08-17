@@ -120,3 +120,25 @@
   height: 20%;
   box-sizing: border-box;
 }
+
+.image-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.circle{
+  border-radius: 50px
+}
+
+.header-text{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.sub-header-text{
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgb(171, 171, 171);
+}
