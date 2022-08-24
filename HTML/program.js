@@ -36,6 +36,14 @@ var roll_number = "2335DFEG454";
 var english_score = 75;
 var math_score = 80;
 
+//Change a variable value
+first_name = "Mr.ABC";
+
+//Clear the value from a Variable
+first_name = undefined;
+
+
+console.log(first_name);
 // Object -> It is a collection of key and value (collection of property)
 // syntax
 // var variable_name = { 
@@ -55,3 +63,46 @@ var student_information = {
 };
 
 console.log(student_information);
+
+// Operations in Object -> Read value, Insert value, Update value, Delete value
+
+// To Read a value from Object
+// Syntax
+// object_variable_name.key; 
+console.log(student_information.first_name);
+
+// To Insert a new value into the Object
+// Syntax
+// object_variable_name.newKey = value;
+student_information.blood_group = "A +ve";
+
+// To Update a value from the Object
+// syntax 
+// object_variable_name.key = new value;
+student_information.roll_number = "ABC1234354";
+
+// To Delete a value from an Object 
+// syntax
+// delete object_variable_name.key;
+delete student_information.first_name;
+
+console.log(student_information);
+
+// Array -> It is a collection of data (List of data)
+// syntax
+// var variable_name = [value1, value2, value3, ... , valueN];
+// value -> Number, String, Boolean, undefined, Object, Array
+
+var list_of_score = [98, 75, 57, 124, 978]; 
+console.log(list_of_score);
+
+var name_list = ["adasdas", "ewfrwer", "tert", "yrttgr"];
+console.log(name_list);
+
+var student_list = [
+  {name : "Mr.ABC", age : 24},
+  {name : "Mr.XYZ", age : 25},
+  {name : "Mr.UIO", age : 27}
+];
+
+console.log(student_list);
