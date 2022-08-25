@@ -106,3 +106,40 @@ var student_list = [
 ];
 
 console.log(student_list);
+
+// Operations in Array -> Read value, Insert value, Update value, Delete value
+
+// To Read a value from Array
+// syntax 
+// array_variable_name[index] 
+console.log(student_list[1])
+
+// To insert a value into Array
+// synax
+// push -> Value will be inserted at end of the Array list
+// array_variable_name.push(value1, value2, value3, ... , valueN);
+student_list.push({name : "karthick", age: 27});
+
+// unshift -> Values will be inserted at start of the Array list
+// array_variable_name.unshift(value1, value2, value3, ... , valueN);
+student_list.unshift({name : "zyan", age: 22});
+
+// To update an Array value
+// syntax 
+// array_variable_name[index] = new Value;
+student_list[2] = {name: "Zyan", age: 22};
+
+// To delete a value from Array
+// syntax 
+// array_variable_name.splice(index, deleteCount);
+student_list.splice(2, 1);
+
+// Function -> Used to write a block of Code
+
+// Syntax for Creating a Function (Function Definition)
+
+// function function_name(){
+//    define all our code
+// }
+
+// function_name -> It should be a proper text, it should include a-z, A-Z, 0-9, _ , $
