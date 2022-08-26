@@ -16,3 +16,36 @@
 .align-self{
   align-self: flex-start; /* Align the child content in Y direction (top to bottom) */
 }
+
+.main-box{
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-1{
+  width: 45%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.box-2{
+  width: 10%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.box-3{
+  width: 45%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.line{
+  margin-top: 36px;
+}
+
+.text{
+  text-align: center;
+}
