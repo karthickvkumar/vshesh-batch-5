@@ -143,3 +143,39 @@ student_list.splice(2, 1);
 // }
 
 // function_name -> It should be a proper text, it should include a-z, A-Z, 0-9, _ , $
+
+// Syntax for Executing/Running the Function (Function Invocation)
+
+// function_name();
+
+function login(){
+  var result = "You have loggin to the application";
+  console.log(result);
+}
+
+function logout(){
+  var value = "You have been Loggout!"
+  console.log(value);
+}
+
+// Operators
+// 1. Arithmetic Operator +, -, *, /, %, ++, --
+// 2. Assignment Operator =
+// 3. Comparision Operator <, <=, >, >=, ==, ===, !=, !== 
+// 4. Logical Operator  &&, ||, !
+
+// && - AND
+// true && true -> true
+// true && false -> false
+// false && true -> false
+// false && false -> false
+
+// || - OR
+// true || true -> true
+// false || true -> true
+// true || false -> true
+// false || false -> false
+
+// ! - NOT
+// ! true -> false
+// ! false -> true
