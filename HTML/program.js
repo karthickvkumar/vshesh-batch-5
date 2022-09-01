@@ -203,3 +203,77 @@ function check_voiting_status(){
     console.log("The user is not eligible for vote");
   }
 }
+
+
+// Syntax - Multiple if else condition 
+
+// if(conditon) {
+  
+// }
+// else if(condition){
+
+// }
+// else{
+  
+// }
+
+// Problem Statement
+// 1. We need to provide age(Number - Data type) as input for a program 
+// 2. If the age is less then 18 -> The person is Minor category
+// 3. If the age is greater then or equal to 18 and less then 60 -> The person is Major category
+// 4. If the age is greater then or equal to 60 -> The person is super senior category
+
+function check_person_age_category(){
+  var age = prompt("Enter user age");
+  if(age < 18){
+    console.log("The person is Minor category");
+  }
+  else if(age >= 18 && age < 60){
+    console.log("The person is Major category");
+  }
+  else{
+    console.log("The person is super senior category");
+  }
+}
+
+// syntax - for (loop)
+// for(intialization; condition; increment/decrement){
+//   code block that we reapt
+// }
+
+for(var count = 1; count <= 100; count++){
+  console.log("The loop is running on times", count);
+}
+
+// To find even number for given N number of list
+// Problem statement 
+// 1. Get a number as input while exectuing the function 
+// 2. Logic for finding even number -> number % 2 == 0 
+// 3. Repeat the above mentined logic till the last number
+
+function check_even_number(){
+  var lastNumber = prompt("Enter last number");
+  for(var count = 0; count <= lastNumber; count++){
+    if(count % 2 == 0){
+      console.log(count, "is a Even Number");
+    }
+  }
+}
+
+// syntax - for in (loop) -> Used to iterate Object property
+// for(var variable_name in object_variable_name){
+   
+// }
+
+for(var key in student_information){
+  console.log(student_information[key]);
+}
+
+// syntax - for of (loop) -> Used to iterate Array
+// for(var variable_name of array_variable_name){
+ 
+// }
+
+for(var value of name_list){
+  console.log(value);
+}
