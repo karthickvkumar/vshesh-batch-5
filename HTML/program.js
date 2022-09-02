@@ -153,6 +153,7 @@ function login(){
   console.log(result);
 }
 
+
 function logout(){
   var value = "You have been Loggout!"
   console.log(value);
@@ -276,4 +277,87 @@ for(var key in student_information){
 
 for(var value of name_list){
   console.log(value);
+}
+
+// syntax - While (loop) (Entry Level Check)
+// while(condition){
+
+// }
+
+var count = 1;
+while(count <= 10){
+  console.log("Loop is running on times", count);
+  count++;  
+}
+
+// syntax - do while (loop) (Exit Level Check)
+// do{
+
+// }while(condition);
+
+var count = 11;
+do{
+ console.log("Count value is", count);
+}while(count <= 10)
+
+//syntax - Switch case
+
+// switch(expression){
+//   case value:
+//     //code 
+//     break;
+//   case value:
+//     //code
+//     break;
+//   default:
+//     //code 
+// }
+
+function find_weekday(){
+  var day = prompt("Enter a number from 0 - 6");
+
+  switch(day){
+    case "0":
+      console.log("Sunday");
+      break;
+    case "1":
+      console.log("Monday");
+      break;
+    case "2":
+      console.log("Tuesday");
+      break;
+    case "3":
+      console.log("Wednesday");
+      break;
+    case "4":
+      console.log("Thursday");
+      break;
+    case "5":
+      console.log("Friday");
+      break;
+    case "6":
+      console.log("Saturday");
+        break;
+     default:
+      console.log("Invalid Input")
+  }
+}
+
+// Scope - How a variable can be accessable 
+// 1. Local Scope - If a variable is defined inside the function definition 
+// 2. Global Scope - If a variable is defined outside the function definition 
+// 3. Automatic Global Scope - If a variable definited outside but the value is definied inside a function definition 
+
+var future_value;
+var printMessage = "Hello, Good Morning";
+
+function Print(){
+  future_value = "Yes I got it";
+  console.log(future_value);
+  console.log(printMessage);
+}
+
+function display(){
+  console.log(future_value);
+  console.log(printMessage);
 }
