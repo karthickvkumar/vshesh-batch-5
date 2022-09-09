@@ -2,3 +2,34 @@
   font-size: 24px;
   color: blueviolet;
 }
+
+.label{
+  font-size: 24px;
+  display: inline-block;
+  width: 225px;
+}
+
+.input{
+  width: 250px;
+  font-size: 24px;
+}
+
+.space{
+  margin-top: 10px;
+}
+
+.form-content{
+  border: 1px solid;
+  padding-left: 22vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.button{
+  font-size: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: cornflowerblue;
+    color: white;
+}
