@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 function FormSubmittion(){
+
+  var [loginFrom, setLoginForm] = useState({
+    username : "",
+    password: ""
+  });
   
   function onLogin(){
     alert("Hey your aboout the submit the login form");
