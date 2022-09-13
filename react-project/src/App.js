@@ -1,17 +1,20 @@
-import ClassComponent from "./components/class-component";
-import FunctionalComponent from "./components/functional-component";
-import FormSubmittion from "./components/form-submittion";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+import HomePage from "./pages/home-page";
+import AboutPage from "./pages/about-page";
+import ContactPage from "./pages/contact-page";
 
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1 className="heading">Hello, Welcome to React JS</h1>
-      <ClassComponent></ClassComponent>
-      <FunctionalComponent></FunctionalComponent>
-      <FormSubmittion></FormSubmittion>
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path="home" element={<HomePage></HomePage>}></Route>
+          <Route path="about" element={<AboutPage></AboutPage>}></Route>
+          <Route path="contact" element={<ContactPage></ContactPage>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
