@@ -37,3 +37,23 @@
 .link{
   margin-left: 25px;
 }
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.section{
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.form-label{
+  display: inline-block;
+  width: 150px;
+}
+
+.form-label-big{
+  display: inline-block;
+  width: 200px;
+}
