@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import axios from "axios";
 
 import HeaderComponent from "../components/header";
 
 function HomePage(){
+
+  var [userData, setUserData] = useState([]);
 
   function loadUserAPI(){
     var url = "https://reqres.in/api/users?page=2";
@@ -12,7 +14,7 @@ function HomePage(){
       .then((success) => {
         var response = success.data;
         var userList = response.data;
-        console.log(userList);
+        setUserData(userList);
       })
       .catch((failure) => {
         console.log(failure);
@@ -36,14 +38,22 @@ function HomePage(){
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          
+          {
+            userData.map((value, index) => {
+              return(
+                <tr key={index}>
+                  <td>{value.id}</td>
+                  <td>{value.first_name}</td>
+                  <td>{value.last_name}</td>
+                  <td>{value.email}</td>
+                  <td>
+                    <img src={value.avatar} />
+                  </td>
+                </tr>
+              )
+            })
+          }
+
         </tbody>
       </table>
       </div>
