@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 import HeaderComponent from "../components/header";
@@ -6,6 +6,10 @@ import HeaderComponent from "../components/header";
 function HomePage(){
 
   var [userData, setUserData] = useState([]);
+
+  useEffect(() => {
+    loadUserAPI();
+  }, []);
 
   function loadUserAPI(){
     var url = "https://reqres.in/api/users?page=2";

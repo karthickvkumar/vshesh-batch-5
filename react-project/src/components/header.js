@@ -9,6 +9,7 @@ function HeaderComponent(){
       <NavLink to="/home" className="link">HOME Page</NavLink>
       <NavLink to="/about" className="link">ABOUT Page</NavLink>
       <NavLink to="/contact" className="link">CONTACT Page</NavLink>
+      <NavLink to="/login" className="link">LOGIN Page</NavLink>
     </div>
   )
 }
