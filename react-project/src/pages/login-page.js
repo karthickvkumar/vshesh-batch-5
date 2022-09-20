@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
 import HeaderComponent from "../components/header";
@@ -10,6 +11,8 @@ function LoginPage(){
     password: ""
   });
 
+  var navigate = useNavigate();
+
   function onSubmit(){
     // console.log(form);
     var url = "https://reqres.in/api/login";
@@ -18,7 +21,8 @@ function LoginPage(){
       .then((success) => {
         var response = success.data;
         console.log(response);
-        alert("Successfully Logged in");
+        // alert("Successfully Logged in");
+        navigate("/about");
       })
       .catch((failure) => {
         console.log(failure);

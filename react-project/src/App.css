@@ -80,3 +80,8 @@
   background-color: #04AA6D;
   color: white;
 }
+
+.circle-image{
+  border-radius: 75px;
+  width: 60px;
+}

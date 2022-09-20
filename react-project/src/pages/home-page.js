@@ -25,6 +25,38 @@ function HomePage(){
       });
   }
 
+  function editProfile(value){
+    var url = "https://reqres.in/api/users/" + value.id;
+    var data = {
+      "name": "morpheus",
+      "job": "zion resident"
+    };
+
+    axios.put(url, data)
+      .then((success) => {
+        var response = success.data;
+        console.log(response);
+      })
+      .catch((failure) => {
+        console.log(failure);
+        alert("Something went wrong, pls try later");
+      })
+  }
+  
+  function delelteProfile(value){
+    var url = "https://reqres.in/api/users/" + value.id;
+    
+    axios.delete(url)
+      .then((success) => {
+        console.log(success);
+        alert("Deleted is completed");
+      })
+      .catch((failure) => {
+        console.log(failure);
+        alert("Something went wrong, pls try later");
+      })
+  }
+
   return(
     <div>
       <HeaderComponent></HeaderComponent>
@@ -39,6 +71,7 @@ function HomePage(){
             <th>Last Name</th>
             <th>Email</th>
             <th>Picture</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -51,7 +84,11 @@ function HomePage(){
                   <td>{value.last_name}</td>
                   <td>{value.email}</td>
                   <td>
-                    <img src={value.avatar} />
+                    <img src={value.avatar} alt="" className="circle-image"/>
+                  </td>
+                  <td>
+                    <button onClick={() => editProfile(value)}>Edit</button>
+                    <button onClick={() => delelteProfile(value)}>Delete</button>
                   </td>
                 </tr>
               )
