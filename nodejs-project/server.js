@@ -42,6 +42,75 @@ app.get("/user/list", (request, response) => {
   })
 })
 
+// http://localhost:4000/user/create
+app.post("/user/create", (request, response) => {
+  var firstName = request.body.first_name;
+  var lastName = request.body.last_name;
+  var emailID = request.body.email_id;
+  var age = request.body.age;
+  var mobileNumber = request.body.mobile_number;
+
+  var sql_query = `INSERT INTO karthick_kumar (first_name, last_name, email_id, age, mobile_number) VALUES ('${firstName}', '${lastName}', '${emailID}', ${age}, ${mobileNumber})`;
+
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+    }
+    else{
+      response.status(200).send({
+        serverResult: result,
+        message: "User profile has been created successfully"
+      });
+    }
+  })
+
+})
+
+// http://localhost:4000/user/edit/1
+app.put("/user/edit/:id", (request, response) => {
+  var firstName = request.body.first_name;
+  var lastName = request.body.last_name;
+  var emailID = request.body.email_id;
+  var age = request.body.age;
+  var mobileNumber = request.body.mobile_number;
+
+  var id = request.params.id;
+
+  var sql_query = `UPDATE karthick_kumar SET first_name='${firstName}', last_name='${lastName}', email_id='${emailID}', age=${age}, mobile_number=${mobileNumber} WHERE id=${id}`;
+
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+    }
+    else{
+      response.status(200).send({
+        serverResult: result,
+        message: "User profile has been modified successfully"
+      });
+    }
+  })
+
+})
+
+// http://localhost:4000/user/delete/1
+app.delete("/user/delete/:id", (request, response) => {
+  var id = request.params.id;
+
+  var sql_query = `DELETE FROM karthick_kumar WHERE id=${id}`;
+
+  connection.query(sql_query, (error, result) => {
+    if(error){
+      response.status(500).send(error);
+    }
+    else{
+      response.status(200).send({
+        serverResult: result,
+        message: "User profile has been deleted successfully"
+      });
+    }
+  })
+})
+
 
 
 http.listen(4000, () => {
